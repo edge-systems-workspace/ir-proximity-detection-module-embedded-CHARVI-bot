@@ -35,3 +35,13 @@ void setup(){
  */
 void loop(){
     int value = digitalRead(IR_pin);
+    if(value == 0){                //Active Low Sensor
+        Serial.println("Object Detected");
+        digitalWrite(13,1);
+    }else{
+        Serial.println("No Object Detected");
+        digitalWrite(13,1);
+    }
+    delay(300);
+
+}
