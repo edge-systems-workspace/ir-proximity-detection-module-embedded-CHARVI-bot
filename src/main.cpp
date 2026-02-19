@@ -33,3 +33,5 @@ void setup(){
  * @author shre-coder638
  * @date 2026-02-17
  */
+void loop(){
+    int value = digitalRead(IR_pin);
